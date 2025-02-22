@@ -43,7 +43,12 @@ header nav .logo a {
   color: var(--first);
 }
 header nav .logo a span {
-  color: var(--color);
+  color: #f52cf9;
+}
+header nav .list-darkmode-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 /*

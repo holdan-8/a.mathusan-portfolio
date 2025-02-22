@@ -46,9 +46,17 @@ header {
                 color: var(--first);
 
                 span {
-                    color: var(--color);
+                    color: #f52cf9;
                 }
             }
+        }
+
+        .list-darkmode-menu{
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+
+
         }
     }
 }
