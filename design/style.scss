@@ -25,7 +25,32 @@ margin: 0 auto;
 //header start
 
 header {
+    background: var(--bg-color);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            z-index: 1;
+
+            a{
+                text-decoration: none;
+                font-size: 32px;
+                font-weight: 600;
+                color: var(--first);
+
+                span {
+                    color: var(--color);
+                }
+            }
+        }
+    }
 }
 
 /*
