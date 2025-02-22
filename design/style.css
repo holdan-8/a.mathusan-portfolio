@@ -67,6 +67,62 @@ header nav .list-darkmode-menu ul li a {
   font-weight: 500;
   transition: 0.3s ease;
 }
+header nav .list-darkmode-menu ul li a:hover {
+  color: var(--color);
+}
+header nav .list-darkmode-menu ul li a:hover::before {
+  width: 100%;
+}
+header nav .list-darkmode-menu ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 0;
+  height: 2.5px;
+  background: var(--color);
+  transition: 0.3s ease;
+}
+header nav .list-darkmode-menu .mode {
+  color: var(--text-color);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+header nav .list-darkmode-menu .mode .fa-moon,
+header nav .list-darkmode-menu .mode .fa-sun {
+  position: absolute;
+  animation: animate 0.5s;
+}
+header nav .list-darkmode-menu .mode .fa-sun {
+  display: none;
+}
+header nav .list-darkmode-menu .mode input:checked ~ .fa-moon {
+  display: none;
+}
+header nav .list-darkmode-menu .mode input:checked ~ .fa-sun {
+  display: block;
+}
+header nav .list-darkmode-menu .mode input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(-360deg) scale(0);
+    opacity: 0;
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+}
 
 /*
 
