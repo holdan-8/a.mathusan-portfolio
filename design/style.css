@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
-  font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 :root {
-  --text-color: #fff
-  --color: #f52cf9
-  --bg-color: blue
-  --first: #fff
-  --second: #000
-  --mob-color: #363633 ;
+  --text-color: #fff;
+  --color: #6EACDA;
+  --bg-color: #021526;
+  --first: #fff;
+  --second: #000;
+  --mob-color: #363633;
 }
 
 .container {
@@ -44,6 +44,28 @@ header nav .logo a {
 }
 header nav .logo a span {
   color: var(--color);
+}
+header nav .list-darkmode-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+header nav .list-darkmode-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  font-size: 18px;
+  list-style: none;
+  z-index: 1;
+}
+header nav .list-darkmode-menu ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--first);
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
 
 /*
