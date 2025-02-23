@@ -8,11 +8,19 @@
 
 :root {
   --text-color: #fff;
-  --color: #6EACDA;
-  --bg-color: #021526;
+  --color: #610094;
+  --bg-color: #000000;
   --first: #fff;
   --second: #000;
   --mob-color: #363633;
+}
+
+body.dark-mode {
+  --text-color: #222;
+  --bg-color: #f2f2f2;
+  --first: #222;
+  --second: #fff;
+  --mob-color: #eae6e6;
 }
 
 .container {
@@ -134,6 +142,7 @@ header nav .list-darkmode-menu .hamburger {
   outline: none;
   background: none;
   scale: 0.9;
+  display: none;
 }
 header nav .list-darkmode-menu .hamburger .bar, header nav .list-darkmode-menu .hamburger::after, header nav .list-darkmode-menu .hamburger::before {
   content: "";
@@ -143,6 +152,15 @@ header nav .list-darkmode-menu .hamburger .bar, header nav .list-darkmode-menu .
   background: var(--first);
   margin: 6px 0;
   transition: 0.4s;
+}
+header nav .list-darkmode-menu .hamburger.active::before {
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+header nav .list-darkmode-menu .hamburger.active::after {
+  transform: rotate(45deg) translate(-8px, -5px);
+}
+header nav .list-darkmode-menu .hamburger.active .bar {
+  opacity: 0;
 }
 
 /*
