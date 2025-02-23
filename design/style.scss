@@ -36,7 +36,7 @@ header {
         align-items: center;
         justify-content: space-between;
 
-        .logo{
+        .logo {
             z-index: 1;
 
             a{
@@ -51,7 +51,7 @@ header {
             }
         }
 
-        .list-darkmode-menu{
+        .list-darkmode-menu {
             display: flex;
             align-items: center;
             gap: 2.5rem;
@@ -140,6 +140,30 @@ header {
                 75% {
                     transform: rotate(25deg);
                 }
+            }
+
+            .hamburger {
+                position: relative;
+                width: 30px;
+                cursor: pointer;
+                appearance: none;
+                border: none;
+                outline: none;
+                background: none;
+                scale: 0.9;
+               // display: none;
+
+               .bar,
+               &::after,
+               &::before{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 3px;
+                background: var(--first);
+                margin: 6px 0;
+                transition: 0.4s;
+               }
             }
         }
     }
