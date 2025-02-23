@@ -28,3 +28,13 @@ darkModeButton.addEventListener('change', () => {
         enableDarkMode();
     }
 });
+
+// Multiple Text
+
+const typed = new Typed('.multiple', {
+    strings:['DevOps Engineer', 'Student'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
