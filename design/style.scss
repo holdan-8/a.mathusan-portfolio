@@ -9,7 +9,7 @@
 
 :root {
     --text-color: #fff;
-    --color: #610094;
+    --color: #1F4287;
     --bg-color: #363633;
     --first: #fff;
     --second: #000;
@@ -307,6 +307,27 @@ header {
 
         .right {
             flex: 1;
+
+            .profile {
+                text-align: right;
+
+                .img {
+                    width: 450px;
+                    height: 450px;
+                    object-fit: cover;
+                    object-position: top;
+                    border-radius: 50%;
+                    border: 3px solid var(--color);
+                    box-shadow: 0 0 40px var(--color);
+                    cursor: pointer;
+                    transform: 0.8s ease;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: 0 0 80px var(--color);
+                    }
+                }
+            }
         }
     }
 }

@@ -8,7 +8,7 @@
 
 :root {
   --text-color: #fff;
-  --color: #610094;
+  --color: #1F4287;
   --bg-color: #363633;
   --first: #fff;
   --second: #000;
@@ -266,6 +266,26 @@ header nav .list-darkmode-menu .hamburger.active .bar {
 }
 .home .home-info .right {
   flex: 1;
+}
+.home .home-info .right .profile {
+  text-align: right;
+}
+.home .home-info .right .profile .img {
+  width: 450px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 50%;
+  border: 3px solid var(--color);
+  box-shadow: 0 0 40px var(--color);
+  cursor: pointer;
+  transform: 0.8s ease;
+}
+.home .home-info .right .profile .img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 80px var(--color);
 }
 
 /*
