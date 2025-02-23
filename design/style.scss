@@ -311,7 +311,7 @@ header {
             .profile {
                 text-align: right;
 
-                .img {
+                img {
                     width: 450px;
                     height: 450px;
                     object-fit: cover;
@@ -331,6 +331,122 @@ header {
         }
     }
 }
+
+// Respnsive
+
+@media screen and (max-width: 1280px){
+    header {
+        nav {
+            padding: 0 50px;
+        }
+    }
+    
+    .home {
+        padding: 250px 50px;
+        .home-info {
+            .left {
+                h1 {
+                    font-size: 4em;
+                }
+            }
+
+            .right {
+                .profile {
+                    img {
+                        width: 400px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        background: var(--mob-color);
+        position: sticky;
+        top: 0;
+        z-index: 9;
+
+        nav {
+            .list-darkmode-menu {
+                ul {
+                    position: fixed;
+                    top: 89px;
+                    left: -100%;
+                    max-width: 60%;
+                    width: 100%;
+                    height: 100vh;
+                    background: var(--mob-color);
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    padding: 30px 50px;
+                    gap: 30px;
+                    transition: 0.3s ease;
+
+                    li {
+                        a {
+                            font-size: 22px;
+                        }
+                    }
+
+                    &.active {
+                        left: 0%;
+                    }
+                }
+
+                .hamburger {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // Home Sectiom
+
+    .home {
+        position: relative;
+        padding: 30px 50px;
+        height: 100%;
+
+        .home-info {
+            flex-direction: column-reverse;
+            
+            .left {
+                padding-top: 50px;
+
+                p {
+                    width: 100%;
+                }
+
+                .social {
+                    display: none;
+                }
+            }
+
+            .right {
+                .profile {
+                    margin-top: 25px;
+
+                    img {
+                        width: 375px;
+                        height: 375px;
+                        box-shadow: 0 0 30px var(--color);
+
+                        &:hover {
+                            box-shadow: 0 0 60px var(--color)
+                        }
+                    
+                    }
+
+                }
+            }
+        }
+    }
+}
+
 
 /*
 

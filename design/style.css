@@ -270,7 +270,7 @@ header nav .list-darkmode-menu .hamburger.active .bar {
 .home .home-info .right .profile {
   text-align: right;
 }
-.home .home-info .right .profile .img {
+.home .home-info .right .profile img {
   width: 450px;
   height: 450px;
   -o-object-fit: cover;
@@ -283,11 +283,86 @@ header nav .list-darkmode-menu .hamburger.active .bar {
   cursor: pointer;
   transform: 0.8s ease;
 }
-.home .home-info .right .profile .img:hover {
+.home .home-info .right .profile img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 80px var(--color);
 }
 
+@media screen and (max-width: 1280px) {
+  header nav {
+    padding: 0 50px;
+  }
+  .home {
+    padding: 250px 50px;
+  }
+  .home .home-info .left h1 {
+    font-size: 4em;
+  }
+  .home .home-info .right .profile img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header {
+    background: var(--mob-color);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+  }
+  header nav .list-darkmode-menu ul {
+    position: fixed;
+    top: 89px;
+    left: -100%;
+    max-width: 60%;
+    width: 100%;
+    height: 100vh;
+    background: var(--mob-color);
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px 50px;
+    gap: 30px;
+    transition: 0.3s ease;
+  }
+  header nav .list-darkmode-menu ul li a {
+    font-size: 22px;
+  }
+  header nav .list-darkmode-menu ul.active {
+    left: 0%;
+  }
+  header nav .list-darkmode-menu .hamburger {
+    display: block;
+  }
+  .home {
+    position: relative;
+    padding: 30px 50px;
+    height: 100%;
+  }
+  .home .home-info {
+    flex-direction: column-reverse;
+  }
+  .home .home-info .left {
+    padding-top: 50px;
+  }
+  .home .home-info .left p {
+    width: 100%;
+  }
+  .home .home-info .left .social {
+    display: none;
+  }
+  .home .home-info .right .profile {
+    margin-top: 25px;
+  }
+  .home .home-info .right .profile img {
+    width: 375px;
+    height: 375px;
+    box-shadow: 0 0 30px var(--color);
+  }
+  .home .home-info .right .profile img:hover {
+    box-shadow: 0 0 60px var(--color);
+  }
+}
 /*
 
 {
