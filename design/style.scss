@@ -192,6 +192,50 @@ header {
 // Header End
 
 // Home Start
+
+.home {
+    background: var(--bg-color);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    padding: 300px 0 50px;
+
+    .home-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left {
+            flex: 1;
+            
+            h3 {
+                font-size: 2.5em;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                color: var(--first);
+                border-radius: 25px;
+            }
+
+            h1 {
+                font-size: 4.5em;
+                color: var(--first);
+                margin: 10px 0;
+            }
+
+            h4 {
+                color: var(--first);
+                font-size: 2.2em;
+            }
+        }
+
+        .right {
+            flex: 1;
+        }
+    }
+}
+
 /*
 
 {
