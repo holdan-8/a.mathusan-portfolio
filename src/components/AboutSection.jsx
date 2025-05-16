@@ -1,7 +1,7 @@
 import { Briefcase } from "lucide-react";
 import { User } from "lucide-react";
 import { Code } from "lucide-react";
-import mypic from "@/img/mypic.png";
+import mypic from "../img/mypic.png";
 
 
 

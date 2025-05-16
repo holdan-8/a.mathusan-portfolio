@@ -6,14 +6,14 @@ const careereducations = [
         title: "DevOps Engineer II - Swisscom Schweiz AG",
         description:
           "In my DevOps Engineer role, I performed various tasks and worked in endpoint security.",
-        image: "public/logos/swisscom.jpg",
+        image: "/logos/swisscom.jpg",
         tags: ["Dec 2022 - Today", "Career"],
     },
     {
       id: 2,
       title: "BSc. Business IT",
       description: "Berner Fachhochschule",
-      image: "public/logos/bfh.png",
+      image: "/logos/bfh.png",
       tags: ["Feb 2024 - Sep 2025", "Education"],
     },
     {
@@ -21,7 +21,7 @@ const careereducations = [
       title: "Dipl. Business IT",
       description:
         "Ipso! Höhere Fachschule",
-      image: "public/logos/ipso.png",
+      image: "/logos/ipso.png",
       tags: ["Nov 2020 - Nov 2023", "Education"],
     },
     {
@@ -29,7 +29,7 @@ const careereducations = [
         title: "DevOps Engineer I - Swisscom Schweiz AG",
         description:
           "In my DevOps Engineer role, I performed various tasks and worked as application manager.",
-        image: "public/logos/swisscom.jpg",
+        image: "/logos/swisscom.jpg",
         tags: ["Oct 2021 - Dec 2022", "Career"],
       },
       {
@@ -37,7 +37,7 @@ const careereducations = [
         title: "ICT Starter - Swisscom Schweiz AG",
         description:
           "In my role as ICT Starter, I took on various tasks and worked in the Printing Services division.",
-        image: "public/logos/swisscom.jpg",
+        image: "/logos/swisscom.jpg",
         tags: ["Aug 2020 - Sep 2021", "Career"],
       },
       {
@@ -45,7 +45,7 @@ const careereducations = [
         title: "Apprenticeship as a computer scientist EFZ",
         description:
           "I completed my apprenticeship as a computer scientist EFZ at Swisscom.",
-        image: "public/logos/swisscom.jpg",
+        image: "/logos/swisscom.jpg",
         tags: ["Aug 2016 - Jul 2020", "Career"],
       },
       {
@@ -53,7 +53,7 @@ const careereducations = [
         title: "Computer scientist EFZ",
         description:
           "GIBB Bern",
-        image: "public/logos/gibb.png",
+        image: "/logos/gibb.png",
         tags: ["Aug 2016 - Jul 2020", "Education"],
       },
       {
@@ -61,7 +61,7 @@ const careereducations = [
         title: "Apprenticeship as an IT technician EBA",
         description:
           "I completed my apprenticeship as a IT technician EBA at Swisscom.",
-        image: "public/logos/swisscom.jpg",
+        image: "/logos/swisscom.jpg",
         tags: ["Aug 2014 - Jul 2016", "Career"],
       },
       {
@@ -69,7 +69,7 @@ const careereducations = [
         title: "IT technician EBA",
         description:
           "GIBB Bern",
-        image: "public/logos/gibb.png",
+        image: "/logos/gibb.png",
         tags: ["Aug 2014 - Jul 2016", "Education"],
       },
   ];

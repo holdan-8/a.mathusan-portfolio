@@ -2,7 +2,7 @@ import { Moon } from "lucide-react";
 import { Sun } from "lucide-react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 export const ThemeToggle = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
