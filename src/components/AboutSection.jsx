@@ -48,14 +48,13 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="https://1drv.ms/b/c/25aa2b9abe27646f/EQ2pQ1zDRmNKpauRMbAD-SgBNXGI-mh2t5_Z9UpCHeh-kw?e=cO0XHG"
+                href="https://1drv.ms/b/c/25aa2b9abe27646f/EQ2pQ1zDRmNKpauRMbAD-SgBNXGI-mh2t5_Z9UpCHeh-kw?e=cO0XHG*" target="_blank"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
               </a>
             </div>
           </div>
-
 
           <div className="grid grid-cols-1 gap-6">
           <div className="gradient-border p-6 card-hover">
