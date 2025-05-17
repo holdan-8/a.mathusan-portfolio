@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Toaster />
-      <BrowserRouter basename="/a.mathusan-portfolio">
+      <BrowserRouter basename="/a.mathusan-portfolio/">
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={ <Home /> } />
