@@ -1,12 +1,12 @@
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
 import { Mail } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Send } from "lucide-react";
 import { Github } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { Phone } from "lucide-react";
+import { useState } from "react";
   
 
 export const ContactSection = () => {
@@ -23,6 +23,7 @@ export const ContactSection = () => {
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
+      e.target.reset();
       setIsSubmitting(false);
     }, 1500);
   };
@@ -34,8 +35,7 @@ export const ContactSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+        Here are the contact options to get in touch with me
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -46,23 +46,23 @@ export const ContactSection = () => {
             </h3>
 
             <div className="space-y-6">
-  {/* Email */}
-  <div className="items-center space-x-4">
-    <div className="p-3 rounded-full bg-primary/10 flex items-center justify-center">
-      <Mail className="h-6 w-6 text-primary" />
-    </div>
-    <div>
-      <a
-        href="mailto:mathusan.aiyaduraiiyer@gmail.com"
-        className="font-medium hover:text-primary transition-colors"
-      >
-        mathusan.aiyaduraiiyer@gmail.com
-      </a>
-    </div>
-  </div>
+              {/* Email */}
+              <div className="items-center space-x-4">
+                <div className="p-3 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Mail className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <a
+                    href="mailto:mathusan.aiyaduraiiyer@gmail.com"
+                    className="font-medium hover:text-primary transition-colors"
+                  >
+                    mathusan.aiyaduraiiyer@gmail.com
+                  </a>
+                </div>
+              </div>
 
-  {/* Phone */}
-  <div className="items-center space-x-4">
+              {/* Phone */}
+              <div className="items-center space-x-4">
     <div className="p-3 rounded-full bg-primary/10 flex items-center justify-center">
       <Phone className="h-6 w-6 text-primary" />
     </div>
@@ -74,18 +74,18 @@ export const ContactSection = () => {
         +41 79 123 45 67
       </a>
     </div>
-  </div>
+              </div>
 
-  {/* Location */}
-  <div className="items-center space-x-4">
+              {/* Location */}
+              <div className="items-center space-x-4">
     <div className="p-3 rounded-full bg-primary/10 flex items-center justify-center">
       <MapPin className="h-6 w-6 text-primary" />
     </div>
     <div>
       <span className="font-medium hover:text-primary transition-colors">Bern, Switzerland</span>
     </div>
-  </div>
-</div>
+              </div>
+            </div>
 
 
             <div className="pt-8">
