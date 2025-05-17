@@ -34,7 +34,7 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed bottom-4 left-4 z-50 p-3 rounded-full shadow-md hover:scale-105 transition-all focus:outline-none",
+        "fixed bottom-22 left-4 z-50 p-3 rounded-full shadow-md hover:scale-105 transition-all focus:outline-none",
         isDarkMode ? "bg-white" : "bg-gray-900"
       )}
       aria-label="Toggle dark mode"
