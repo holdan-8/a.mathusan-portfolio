@@ -63,27 +63,27 @@ export const ContactSection = () => {
 
               {/* Phone */}
               <div className="items-center space-x-4">
-    <div className="p-3 rounded-full bg-primary/10 flex items-center justify-center">
-      <Phone className="h-6 w-6 text-primary" />
-    </div>
-    <div>
-      <a
-        href="tel:+41791234567"
-        className="font-medium hover:text-primary transition-colors"
-      >
-        +41 79 123 45 67
-      </a>
-    </div>
+                <div className="p-3 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Phone className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <a
+                    href="tel:+41791234567"
+                    className="font-medium hover:text-primary transition-colors"
+                  >
+                    +41 79 123 45 67
+                  </a>
+                </div>
               </div>
 
               {/* Location */}
               <div className="items-center space-x-4">
-    <div className="p-3 rounded-full bg-primary/10 flex items-center justify-center">
-      <MapPin className="h-6 w-6 text-primary" />
-    </div>
-    <div>
-      <span className="font-medium hover:text-primary transition-colors">Bern, Switzerland</span>
-    </div>
+                <div className="p-3 rounded-full bg-primary/10 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <span className="font-medium hover:text-primary transition-colors">Bern, Switzerland</span>
+                </div>
               </div>
             </div>
 
