@@ -3,7 +3,6 @@ import { Sun } from "lucide-react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-
 export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -35,16 +34,15 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed bottom-4 left-4 z-50 p-3 rounded-full",
-        "bg-white dark:bg-gray-800 shadow-md hover:scale-105 transition-all",
-        "focus:outline-none"
+        "fixed bottom-4 left-4 z-50 p-3 rounded-full shadow-md hover:scale-105 transition-all focus:outline-none",
+        isDarkMode ? "bg-white" : "bg-gray-900"
       )}
       aria-label="Toggle dark mode"
     >
       {isDarkMode ? (
-        <Sun className="h-6 w-6 text-yellow-400" />
+        <Sun className="h-6 w-6 text-black" />
       ) : (
-        <Moon className="h-6 w-6 text-blue-600" />
+        <Moon className="h-6 w-6 text-white" />
       )}
     </button>
   );
